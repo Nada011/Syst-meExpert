@@ -74,13 +74,6 @@ class ParfumForm(FlaskForm):
         ('Épicé', 'Épicé')],
         
         validators=[DataRequired()])
-   
-
-    #intensite = RadioField('Préférez-vous des parfums ?', choices=[
-     #   ('Doux et subtils', 'Doux et subtils'),
-      #  ('Puissants et marquants', 'Puissants et marquants')])
-
-   
 
     # Budget et marque
     budget = RadioField('Quel est votre budget pour ce parfum ?', choices=[
@@ -141,19 +134,7 @@ PARFUMS = [
 ]
 
 
-#def recommander_parfum(form_data):if (
-        #form_data['famille'].strip().lower() == "Floral".lower() and
-        #form_data['genre'].strip().lower() == "Femme".lower() and
-        #form_data['occasion'].strip().lower() == "Soirée".lower() and
-        #form_data['saison'].strip().lower() == "Hiver".lower() and
-        #form_data['budget'].strip().lower()== "Plus de 100 €".lower() and
-        #form_data['marque'].strip().lower() == "Chanel".lower() and
-        #form_data['tendance'].strip().lower() == "Classiques".lower()and
-        #form_data['ambiance'].strip().lower()== "Paisibles".lower() and
-        #form_data['cadre'].strip().lower() == "Urbain".lower() and
-       # form_data['personnalite'].strip().lower() == "Romantique".lower()
-   # ):
-       # return "Chanel N°5"
+
 
 from experta import Fact
 from experta import MATCH
